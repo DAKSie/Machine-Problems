@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Problems - JavaScript Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Machine Problems</h1>
+            <p class="subtitle">Learn JavaScript through interactive exercises</p>
+        </header>
+
+        <section class="problem-card">
+            <h2>Problem 1: Number Calculator</h2>
+            <p class="description">Enter two numbers and see various operations performed on them.</p>
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="Enter first number">
+                <input type="number" id="num2" placeholder="Enter second number">
+                <button onclick="calculateNumbers()">Calculate</button>
+            </div>
+            <div id="result1" class="result"></div>
+        </section>
+
+        <section class="problem-card">
+            <h2>Problem 2: String Transformer</h2>
+            <p class="description">Transform your text in different ways using JavaScript string methods.</p>
+            <div class="input-group">
+                <input type="text" id="textInput" placeholder="Enter some text">
+                <button onclick="transformText()">Transform</button>
+            </div>
+            <div id="result2" class="result"></div>
+        </section>
+
+        <section class="problem-card">
+            <h2>Problem 3: Number List Analyzer</h2>
+            <p class="description">Enter comma-separated numbers and analyze them.</p>
+            <div class="input-group">
+                <input type="text" id="numberList" placeholder="e.g., 5, 10, 15, 20, 25">
+                <button onclick="analyzeNumbers()">Analyze</button>
+            </div>
+            <div id="result3" class="result"></div>
+        </section>
+
+        <section class="problem-card">
+            <h2>Problem 4: Temperature Converter</h2>
+            <p class="description">Convert temperatures between Celsius and Fahrenheit.</p>
+            <div class="input-group">
+                <input type="number" id="temperature" placeholder="Enter temperature">
+                <select id="tempUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <button onclick="convertTemperature()">Convert</button>
+            </div>
+            <div id="result4" class="result"></div>
+        </section>
+
+        <section class="problem-card">
+            <h2>Problem 5: Interactive Counter</h2>
+            <p class="description">A simple counter with increment, decrement, and reset functionality.</p>
+            <div class="counter-display">
+                <h3 id="counterValue">0</h3>
+            </div>
+            <div class="button-group">
+                <button onclick="decrementCounter()">- Decrease</button>
+                <button onclick="resetCounter()">Reset</button>
+                <button onclick="incrementCounter()">+ Increase</button>
+            </div>
+        </section>
+
+        <section class="problem-card">
+            <h2>Problem 6: Grade Calculator</h2>
+            <p class="description">Calculate your average grade and see the letter grade.</p>
+            <div class="input-group">
+                <input type="number" id="grade1" placeholder="Grade 1" min="0" max="100">
+                <input type="number" id="grade2" placeholder="Grade 2" min="0" max="100">
+                <input type="number" id="grade3" placeholder="Grade 3" min="0" max="100">
+                <button onclick="calculateGrade()">Calculate Average</button>
+            </div>
+            <div id="result6" class="result"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
